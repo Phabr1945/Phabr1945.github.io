@@ -1,60 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- SEO -->
-    <title>Phabr1945</title>
-    <a href="https://github.com/orgs/TBBOFBD/repositories">
-        <link rel="icon" href="assets/Phabr1945.jpeg">
-    </a>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hyper Software, Somewhat Professional Idiots Who Make Software That Works. (Barely)">
-    <meta name="keywords" content="
-        Matvei, Ryan, Matthew, Maxson, Matvei Tolochko, Ryan Maxson, Mathew Tolochko, Professional, Full Stack Developer,
-        Rust, Python, C++, Java, JavaScript, TypeScript, C, HTML, CSS, Assembly, TI-BASIC, TIBASIC, Hyper Software
-    ">
-    <meta name="og:title" property="og:title" content="Phabr1945" />
-    <meta name="og:description" property="og:description" content="Someone Who Works With Somewhat Professional Idiots Who Make Software That Works. (Barely)" />
-    <meta name="og:image" property="og:image" content="assets/Phabr1945.jpeg" />
-    <meta name="og:locale" property="og:locale" content="en_US" />
-
-    <!-- CSS and JS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Parisienne&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script type="importmap">
-        {
-            "imports": {
-                "hyperlight": "https://cdn.jsdelivr.net/gh/AtomicGamer9523/hyperlight/packages/hyperlight/index.js"
+    <head>
+        <title>Phabr1945</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="og:locale" property="og:locale" content="en_US" />
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <script type="importmap">
+            {
+                "imports": {
+                    "hyperlight": "https://cdn.jsdelivr.net/gh/AtomicGamer9523/hyperlight/packages/hyperlight/index.js"
+                }
             }
-        }
-    </script>
-    <script src="index.js"></script>
-</head>
-<body>
-    <!-- SEO -->
-    <h-seo>
-        Phabr Is A Dev That Has Worked With Many Orginazations, Such As 20022Robocats, HyperCodeUmbrella, rinuxos, and TBBOFBD.
-        He Has Worked On Projects That Include Rust, Python, C++, Java, JavaScript, TypeScript, C, HTML, CSS, Assembly, TI-BASIC, and others.
-    </h-seo>
-
-    <!-- Top Navbar -->
-    <nav align="right" id="navbar">
-        <h-darkmode></h-darkmode>
-    </nav>
-    <section align="center">
-        <h1 id="name">Phabr1945</h1>
-        <img id="logo" class="face" src="assets/Phabr1945.jpeg" alt="My Face">
-        <h-floating-icons></h-floating-icons>
-    </section>
-
-    <!-- Content -->
-    <section align="center" id="info">
-        <br /><br />
-        <p>Phabr Is A Dev That Has Worked With Many Orginazations, Such As 20022Robocats, HyperCodeUmbrella, rinuxos, and TBBOFBD.</p>
-        <p>He Has Worked On Projects That Include Rust, Python, C++, Java, JavaScript, TypeScript, C, HTML, CSS, Assembly, TI-BASIC, and others.</p>
-    </section>
-</body>
-</html>
+        </script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <!-- SEO -->
+        <h-seo>
+            Phabr Is A Dev That Has Worked With Many Orginazations, Such As 20022Robocats, HyperCodeUmbrella, rinuxos, and TBBOFBD.
+            He Has Worked On Projects That Include Rust, Python, C++, Java, JavaScript, TypeScript, C, HTML, CSS, Assembly, TI-BASIC, and others.
+        </h-seo>
+        <section align="center">
+            <h1 id="name">Phabr1945</h1>
+            <h-floating-icons>
+                <i style="font-size: 2.5em" class="bi bi-moon" id="darkmode-toggle"></i>
+        </section>
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button>
+        <script>
+            function darkMode() {
+                let element = document.body;
+                let content = document.getElementById("DarkModetext");
+                element.className = "dark-mode";
+                content.innerText = "Dark Mode is ON";
+            }
+            function lightMode() {
+                let element = document.body;
+                let content = document.getElementById("DarkModetext");
+                element.className = "light-mode";
+                content.innerText = "Dark Mode is OFF";
+            }
+        </script>
+    </body>

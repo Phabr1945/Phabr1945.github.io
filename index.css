@@ -1,11 +1,11 @@
-:root {
+.lightmode {
     --background: #f2f2f2;
     --text-color: #000;
 }
 
 .darkmode {
     --background: #25252b;
-    --text-color: #f2f2f2;
+    --text-color: #ff0000;
     --navbar-color: #000;
 }
 
